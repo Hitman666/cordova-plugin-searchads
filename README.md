@@ -1,7 +1,9 @@
-# Cordova/Ionic Search Ads API Plugin
+# Cordova/Ionic Search Ads App Attribution API Plugin
 
 ## TL;DR
-The Search Ads API plugin for Cordova/Ionic didn't exist, so I created it. You can [check out the code on Github]() and read onward for an example on how to use it.
+Cordova plugin for reading Search Ads App Attribution on **iOS 10.0+ only**.
+
+The Search Ads API plugin for Cordova/Ionic didn't exist, so I created it. You can [check out the plugin code on Github](https://github.com/Hitman666/cordova-plugin-searchads), view the [Ionic demo app code on Github](https://github.com/Hitman666/ionicDemoCordovaPluginSearchAds) or read onward for an example on how to use it.
 
 > You can also check out the step by step tutorial about [How to create a **native iOS app** that can read Search Ads Attribution API information](http://www.nikola-breznjak.com/blog/ios/create-native-ios-app-can-read-search-ads-attribution-api-information/) if you're not into hybrid solutions 😯.
 
@@ -15,7 +17,7 @@ If you want to test this on a blank project, you can create a new Ionic project 
 
 `ionic start ionicSearchAdsDemo tabs`
 
-Since the plugin has been added to [npm repository](), you can simply add it like this:
+Since the plugin has been added to [npm repository](https://www.npmjs.com/package/cordova-plugin-searchads), you can simply add it like this:
 
 `ionic plugin add cordova-plugin-searchads`
 
@@ -62,14 +64,14 @@ After this, open up the XCode project (`*.xcodeproj`) file:
 
 ![](https://i.imgur.com/jqxYHFs.png)
 
-Make sure the `iAd.framework` has been added under Linked frameworks and Libraries:
+Make sure the `iAd.framework` has been added to Linked Frameworks and Libraries:
 
 ![](https://i.imgur.com/fvRkNQU.png)
 
 This should have happened automatically when you've added the plugin, but it's good to make sure. Add it yourself if you don't see it here.
 
-Run the project on your device and you should get something like this:
+Run the project on your device, and you should get something like this:
 
 ![](https://i.imgur.com/tdnkgqb.png)
 
-There, hope this proves to be useful to someone! 💪
+Hope this proves to be useful to someone! 💪
