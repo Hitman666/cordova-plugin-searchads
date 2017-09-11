@@ -1,0 +1,21 @@
+{
+    "name": "cordova-plugin-searchads",
+    "version": "1.0.0",
+    "description": "Read Search Ads Attribution API information in hybrid app projects with Cordova",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Hitman666/cordova-plugin-searchads.git"
+    },
+    "keywords": [
+        "ionic",
+        "cordova",
+        "plugin",
+        "search ads"
+    ],
+    "author": "Nikola Brežnjak<nikola.breznjak@gmail.com> (http://www.nikola-breznjak.com/blog)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Hitman666/cordova-plugin-searchads/issues"
+    },
+    "homepage": "https://github.com/Hitman666/cordova-plugin-searchads#readme"
+}

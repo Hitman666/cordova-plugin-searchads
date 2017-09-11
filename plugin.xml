@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-searchads" version="1.0.0">
+    <name>SearchAds</name>
+
+    <description>Cordova/Ionic SearchAds Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,ionic,search ads</keywords>
+
+    <engines>
+      <engine name="cordova" version=">=3.0.0" />
+      <engine name="cordova-ios" version=">=4.0.0" />
+    </engines>
+
+    <asset src="www/SearchAds.js" target="js/SearchAds.js" />
+
+    <js-module src="www/SearchAds.js" name="SearchAds">
+        <clobbers target="SearchAds" />
+    </js-module>
+
+    <platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="SearchAds">
+				<param name="ios-package" value="CDVSearchAds" />
+			</feature>
+		</config-file>
+      	<source-file src="src/ios/CDVSearchAds.swift" />
+		<framework src="iAd.framework" />
+	</platform>
+
+  	<platform name="android">
+    	<config-file target="config.xml" parent="/*">
+      		<feature name="SearchAds">
+        		<param name="android-package" value="co.teltech.ionic.plugin.SearchAds" />
+      		</feature>
+    	</config-file>
+
+    	<source-file src="src/android/SearchAds.java" target-dir="src/co/teltech/ionic/plugin" />
+  	</platform>
+</plugin>
