@@ -11,7 +11,7 @@ import iAd
         )
     }
     
-    func initialize(_ command:CDVInvokedUrlCommand) {
+    @objc func initialize(_ command:CDVInvokedUrlCommand) {
         DispatchQueue.global().async {
             ADClient.shared().requestAttributionDetails({ (attributionDetails, error) in
                 if error == nil {
